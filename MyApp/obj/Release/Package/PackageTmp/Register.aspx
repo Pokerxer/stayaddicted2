@@ -3,83 +3,49 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>$T@Y@DDICTED2</title>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="Images/favicon.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!--===============================================================================================-->
-    <link href="bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="css/signup/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/signup/style.css">
 </head>
-<body style="width: 633px; height: 188px; margin-bottom: 0;">
-    <form id="form1" runat="server">
-        <asp:Panel ID="Panel1" runat="server" BorderColor="Gray" BorderStyle="Solid" BorderWidth="0px" Width="357px">
-            <h2>User Registration</h2>
-            <br />
-            <div>
-            <table class="w-100">
-                    <tr>
-                        <td>
-                            <asp:TextBox ID="txtUser" runat="server" BackColor="#CCCCCC" ForeColor="#003300" placeholder="Username"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="reqName" runat="server" ControlToValidate="txtUser" ErrorMessage="Username Required" ForeColor="#FF3300" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:TextBox ID="txtPwd" runat="server" BackColor="#CCCCCC" ForeColor="#003300" TextMode="Password" placeholder="Password"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtUser" ErrorMessage="Password Please" ForeColor="#FF3300" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:TextBox ID="txtCPwd" runat="server" BackColor="#CCCCCC" ForeColor="#003300" TextMode="Password" placeholder="Confirm Password"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUser" ErrorMessage="Password not matched" ForeColor="#FF3300" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <asp:Button ID="btnRegister" runat="server" BackColor="#0033CC" ForeColor="White" Text="Register" />
-                        </td>
-                    </tr>
-            </table>
+<body>
+    <div class="main">
+        <section class="signup">
+            <div id="home" class="intro route bg-image" style="background-image: url(Images/signup/signup-bg.jpg)">
+                <div class="container">
+                    <div class="signup-content">
+                        <form method="POST" id="signup-form" class="signup-form">
+                            <h2 class="form-title">Create account</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="name" id="name" placeholder="User Name" />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="password" id="password" placeholder="Password" />
+                                <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Confirm Password" />
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to all <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up" />
+                            </div>
+                            <div class="loginhere">
+                                Have already an account ? <a href="login.aspx" class="loginhere-link">Login here</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-        </asp:Panel>
-        <!--===============================================================================================-->
-        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="vendor/animsition/js/animsition.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="vendor/bootstrap/js/popper.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="vendor/select2/select2.min.js"></script>
-        <!--===============================================================================================-->
-        <script src="vendor/daterangepicker/moment.min.js"></script>
-        <script src="vendor/daterangepicker/daterangepicker.js"></script>
-        <!--===============================================================================================-->
-        <script src="vendor/countdowntime/countdowntime.js"></script>
-        <!--===============================================================================================-->
-        <script src="js/main.js"></script>
-    </form>
+            </div>
+        </section>
+    </div>
+    <!-- JS -->
+    <script src="vendor/signup/jquery.min.js"></script>
+    <script src="vendor/signup/main.js"></script>
 </body>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="dbcon-Web.config Connection String" description="dbcon Connection String used in web.config by the application to access the database." defaultValue="Data Source=N-5CG6362G6L\SQLEXPRESS;Initial Catalog=stayaddicted2;Integrated Security=true;uid=ajay;password=Password@1" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\MyApp\\MyApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dbcon']/@connectionString" />
+  </parameter>
+</parameters>
