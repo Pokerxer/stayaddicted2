@@ -87,7 +87,7 @@
     </script>
 </head>
 <body style="width: 359px; height: 118px; margin-bottom: 0;">
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" defaultbutton="Button1">
         <asp:Panel ID="Panel1" runat="server" BorderColor="White" BorderStyle="None" BorderWidth="0px" Width="356px" Height="462px" CssClass="auto-style5">
             <h1>
                 <asp:Image ID="Image1" runat="server" Height="139px" ImageUrl="~/Images/Stayaddicted2-logo.png" Width="354px" />

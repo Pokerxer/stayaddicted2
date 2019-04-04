@@ -1,3 +1,4 @@
+D:\MyApp\MyApp\obj\Release\MyApp.csproj.CoreCompileInputs.cache
 D:\MyApp\MyApp\bin\MyApp.dll.config
 D:\MyApp\MyApp\bin\MyApp.dll
 D:\MyApp\MyApp\bin\MyApp.pdb
@@ -68,8 +69,6 @@ D:\MyApp\MyApp\bin\Microsoft.AspNet.FriendlyUrls.xml
 D:\MyApp\MyApp\bin\System.Diagnostics.DiagnosticSource.xml
 D:\MyApp\MyApp\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 D:\MyApp\MyApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\MyApp\MyApp\obj\Release\MyApp.csprojAssemblyReference.cache
-D:\MyApp\MyApp\obj\Release\MyApp.csproj.CoreCompileInputs.cache
 D:\MyApp\MyApp\obj\Release\MyApp.csproj.CopyComplete
 D:\MyApp\MyApp\obj\Release\MyApp.dll
 D:\MyApp\MyApp\obj\Release\MyApp.pdb
